@@ -13,8 +13,6 @@ def transform(s):
     return [[int(num) for num in s_[i:i + 9]] for i in range(0, 81, 9)]
 
 
-# todo: givesudoku() in between for animation
-
 def recurse(sudoku, i, j):
     if np.count_nonzero(sudoku) == 81:
         givesudoku(sudoku)  # final sudoku
@@ -40,12 +38,9 @@ def indexhelp(i, j):
 
 
 def possibles(sudoku, row, col):
-
     rowT = list(np.transpose(sudoku)[col])
-
     col_min = (col // 3) * 3
     row_min = (row // 3) * 3
     sqaureofref = [sudoku[i][j] for i in range(row_min, row_min + 3) for j in range(col_min, col_min + 3)]  # sudokusquare
-
     blocked_nums = list(set(sudoku[row] + rowT + sqaureofref))
     return [num for num in range(1, 10) if num not in blocked_nums and num > 0]

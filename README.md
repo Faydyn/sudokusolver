@@ -3,6 +3,11 @@ Python Programm to solve any Sudoku via Backtracking
 ##### by faydyn
 ___
 
+### WiP (Branch: graphic)
+##### Latest Update: 2019-11-28
+* Language Superclass / languages as subclasses
+* Pandas implementation of Sudoku
+___
 ### Development Plans
 * better visualization of Sudokus
     * __Must__: Start- and solved Sudoku

@@ -1,11 +1,15 @@
 from tkinter import filedialog
 from tkinter import *
 import os
+from assisting_code.strings import English
 from assisting_code.solver import solve
 from assisting_code.systempaths import get_abs_path
 
 
 def main():
+    lang = English()
+    print(lang.instruction())  # simple lang select (generalize & improve in strings)
+
     path = get_abs_path()
     rel_path = 'assisting_code/sudokus'
     abs_file_path = os.path.join(path, rel_path)  # define independent path of sudokus

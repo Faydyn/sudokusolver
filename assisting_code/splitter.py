@@ -5,12 +5,12 @@ from assisting_code.systempaths import get_abs_path
 
 path = get_abs_path()
 rel_path = 'sudokus'
-srcfile = 'test.txt'
+srcfile = 'example_split.txt'
 abs_file_path = os.path.join(path, rel_path)  # define independent path of sudokus
 
 
 def create_new(newtitle, content):
-    filename = ''.join([x.lower() for x in newtitle if x.isalnum()])  # clear of whitespaces, etc
+    filename = f'{"".join([x.lower() for x in newtitle if x.isalnum()])}.txt'  # clear of whitespaces, etc
     savepath = os.path.join(abs_file_path, filename)  # must have different title, otherwise overwrites
     newfile = open(savepath, "w+", encoding="utf-8")
     newfile.write(content)
