@@ -5,8 +5,6 @@ from assisting_code.systempaths import get_abs_path
 path = get_abs_path()
 rel_path = 'sudokus'
 abs_file_path = os.path.join(path, rel_path)  # define independent path of sudokus
-os.listdir(abs_file_path)
-
 excluded = ['example_split.txt']
 
 
