@@ -19,13 +19,13 @@ def create_new(newtitle, content):
 
 with open(os.path.join(abs_file_path, srcfile), 'r', encoding="utf-8") as file:
     buffer = ''
-    title = ''
+    title = file.readline()
     for line in file:
         if any([c.isalpha() for c in line]):  # looks for chars, matches only 'separating lines'
-            if title != '':
-                create_new(title, buffer)
-                buffer = ''  # after buffer is saved to file with titlename, it gets reset, so it can store a new sudoku
+            create_new(title, buffer)
+            buffer = ''  # after buffer is saved to file with titlename, it gets reset, so it can store a new sudoku
             title = line
         else:
             buffer += line  # buffer fills with lines until a new title appears
-    create_new(title, buffer)
+
+    create_new(title, buffer)  # because no titel after last sudoku

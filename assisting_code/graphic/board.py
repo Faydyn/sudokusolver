@@ -5,7 +5,7 @@ import tkinter as tk
 class Board:
     def __init__(self):
         self.min_ = 0
-        self.max_ = 900
+        self.max_ = 450
         self.step_ = self.max_ // 9
         self.master = tk.Tk()
         self.lines = list()
@@ -14,7 +14,7 @@ class Board:
 
     # draw sep lines and grey offsquares
     def create_board(self):
-        color_offsquares = '#bbb'
+        color_offsquares = '#ccc'
         self.cv.create_rectangle(self.max_ // 3, self.min_, 2 * self.max_ // 3, self.max_ // 3, fill=color_offsquares)
         self.cv.create_rectangle(self.min_, self.max_ // 3, self.max_ // 3, 2 * self.max_ // 3, fill=color_offsquares)
         self.cv.create_rectangle(2 * self.max_ // 3, self.max_ // 3, self.max_, 2 * self.max_ // 3,
@@ -47,12 +47,12 @@ class Board:
         for i in range(9):
             for j in range(9):
                 self.cv.create_text(j * self.step_ + self.step_ // 2, i * self.step_ + self.step_ // 2,
-                                    fill="#000", font="Arial 48 bold", text=str(sudoku[i][j]))
+                                    fill="#000", font=f"Arial {self.max_//15} bold",
+                                    text=str(sudoku[i][j]) if sudoku[i][j] != 0 else '')
 
     # prints sudoku
     def showoff(self):
         self.cv.pack()
         self.master.mainloop()
-        self.cv.destroy()
 
 
