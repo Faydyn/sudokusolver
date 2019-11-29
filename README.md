@@ -20,3 +20,4 @@ ___
 * __os-package__ absolute pathes working  ($\Rightarrow$ should be working in every folder on every system)
 * __Tkinter__ GUI (simple, to choose sudoku to solve)
 * __Tkinter__ graphical solution
+* Board resizeable and offsetable

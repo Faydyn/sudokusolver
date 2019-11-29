@@ -4,6 +4,7 @@ from assisting_code.graphic.graphics import printsudoku
 
 def solve(s):
     sudoku = transform(s)
+    printsudoku(sudoku)
     return recurse(sudoku, 0, 0)
 
 

@@ -23,7 +23,7 @@ def main():
                                                  ("all files", "*.*'")))
     root.update()
     root.destroy()
-    # GUI for fileselction (askopenfilename muss be sandwich bei update, withdraw before!
+    # GUI for fileselction (askopenfilename muss be sandwich bei update, withdraw before!)
 
     with open(root.filename, 'r', encoding="utf-8") as file:
         sudoku = file.read()
