@@ -1,10 +1,9 @@
 import numpy as np
-from assisting_code.graphics import givesudoku
+from assisting_code.graphic.graphics import printsudoku
 
 
 def solve(s):
     sudoku = transform(s)
-    givesudoku(sudoku)  # initial sudoku
     return recurse(sudoku, 0, 0)
 
 
@@ -15,7 +14,7 @@ def transform(s):
 
 def recurse(sudoku, i, j):
     if np.count_nonzero(sudoku) == 81:
-        givesudoku(sudoku)  # final sudoku
+        printsudoku(sudoku)  # final sudoku
         return True
     elif sudoku[i][j] == 0:
         poss = possibles(sudoku, i, j)
