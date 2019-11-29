@@ -1,5 +1,5 @@
+import tkinter as tk
 from tkinter import filedialog
-from tkinter import *
 import os
 from assisting_code.strings import English
 from assisting_code.solver import solve
@@ -14,11 +14,16 @@ def main():
     rel_path = 'assisting_code/sudokus'
     abs_file_path = os.path.join(path, rel_path)  # define independent path of sudokus
 
-    root = Tk()
+    root = tk.Tk()
+    root.withdraw()
+    root.update()
     root.filename = filedialog.askopenfilename(initialdir=abs_file_path, title="Select file",
                                                filetypes=(
                                                    ("text files", "*.txt"),
-                                                   ("all files", "*.*")))  # GUI for fileselction
+                                                 ("all files", "*.*'")))
+    root.update()
+    root.destroy()
+    # GUI for fileselction (askopenfilename muss be sandwich bei update, withdraw before!
 
     with open(root.filename, 'r', encoding="utf-8") as file:
         sudoku = file.read()
