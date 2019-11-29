@@ -1,3 +1,4 @@
+import sys
 import tkinter as tk
 from tkinter import filedialog
 import os
@@ -29,7 +30,10 @@ def main():
         sudoku = file.read()
         solve(sudoku)  # read txt and give it to solver
 
+    return
+
 
 if __name__ == '__main__':
     main()
-    pass
+    sys.exit()
+
