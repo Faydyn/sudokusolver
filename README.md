@@ -3,9 +3,9 @@ Python Programm to solve any Sudoku via Backtracking
 ###### by faydyn
 ___
 #### Starting the Algorithm
-![Sudoko Backtracking](sdbtff.gif)
+![Sudoko Backtracking](gifs/sdbtff.gif)
 #### Finishes quick in the end :)
-![Finishing the Sudoku](sdbtff_end.gif)
+![Finishing the Sudoku](gifs/sdbtff_end.gif)
 
 _a bit low fps due to .gif-format_
 ___
