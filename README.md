@@ -8,6 +8,7 @@ ___
 * Language Superclass / languages as subclasses
 ___
 ### Needs Fixing
+* "spaced" sudokus to non-spaced
 * weird offset on blinking tile (seems to be the read in Sudoku with Spaces)
 * not enough delay async numbers and color tile
 ___
