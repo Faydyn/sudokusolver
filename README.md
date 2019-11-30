@@ -6,6 +6,8 @@ ___
 ![Sudoko Backtracking](sdbtff.gif)
 #### Finishes quick in the end :)
 ![Finishing the Sudoku](sdbtff_end.gif)
+
+_a bit low fps due to .gif-format_
 ___
 ### WiP 
 ##### Latest Update: 2019-11-30
@@ -23,7 +25,6 @@ ___
 * ~py2exec to run on other PCs
 =======
 * not enough delay asyncs numbers and color tile (seems2b input related as well)
->>>>>>> roundproject
 ___
 ### Releases
 ##### v0.1 (2019-11-28)
@@ -39,4 +40,3 @@ ___
 ##### v0.2 (2019-11-30)
 * __Tkinter__ graphical solution
 * Board resizeable and offsetable (not  dynamically)
->>>>>>> roundproject
