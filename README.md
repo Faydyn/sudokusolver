@@ -24,9 +24,10 @@ ___
 ##### v0.1 (2019-11-28)
 * __Backtracking Algorithm__ implemented working (without optimizations)
 * __Parser__ for .txt-Files to read multiple Sudokus (separated by some alphabetical char (title))
-* __os-package__ absolute pathes working  ($\Rightarrow$ should be working in every folder on every system)
+* __os-package__ absolute pathes working  (should be working in every folder on every system)
 * __Tkinter__ GUI (simple, to choose sudoku to solve)
 
 ##### v0.2 (2019-11-30)
 * __Tkinter__ graphical solution
 * Board resizeable and offsetable (not  dynamically)
+
