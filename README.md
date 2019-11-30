@@ -27,4 +27,4 @@ ___
 
 ##### v0.2 (2019-11-30)
 * __Tkinter__ graphical solution
-* Board resizeable and offsetable (not dynamically)
+* Board resizeable and offsetable (not  dynamically)
