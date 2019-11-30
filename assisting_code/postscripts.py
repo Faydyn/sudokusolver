@@ -1,6 +1,6 @@
 import os
 from PIL import Image
-from assisting_code.graphic.board import Board
+from assisting_code.board import Board
 from assisting_code.solver import transform
 from assisting_code.systempaths import get_abs_path
 

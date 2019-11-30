@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import filedialog
 import os
 from assisting_code.strings import English
-from assisting_code.solver import solve
+from assisting_code.solver import solver
 from assisting_code.systempaths import get_abs_path
 
 
@@ -28,7 +28,7 @@ def main():
 
     with open(root.filename, 'r', encoding="utf-8") as file:
         sudoku = file.read()
-        solve(sudoku)  # read txt and give it to solver
+        solver(sudoku).solve()  # read txt and give it to solver
 
     return
 

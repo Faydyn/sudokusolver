@@ -4,8 +4,12 @@ Python Programm to solve any Sudoku via Backtracking
 ___
 ### WiP (Branch: graphic)
 ##### Latest Update: 2019-11-29
-* Tkinter Animation of Sudoku's Backtracking (with varying speed)
+* Implement fast or graphical solution - decider
 * Language Superclass / languages as subclasses
+___
+### Needs Fixing
+* weird offset on blinking tile (seems to be the read in Sudoku with Spaces)
+* not enough delay async numbers and color tile
 ___
 ### Development Plans
 * better visualization of Sudokus
