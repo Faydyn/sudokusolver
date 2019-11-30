@@ -2,6 +2,8 @@
 Python Programm to solve any Sudoku via Backtracking
 ###### by faydyn
 ___
+[Sudoko Backtracking](sodbtff.gif)
+___
 ### WiP (Branch: graphic)
 ##### Latest Update: 2019-11-29
 * Implement fast or graphical solution - decider

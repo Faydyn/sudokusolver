@@ -7,7 +7,7 @@ import tkinter as tk
 class Board:
     def __init__(self, sudoku):
         self.animated = True
-        self.delay = 0.3
+        self.delay = 0.01
         self.min_ = 5
         self.size = 450
         self.max_ = self.size + self.min_  # changeable, must be divisable by 2 and 9 for symmetry
