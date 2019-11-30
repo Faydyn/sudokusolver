@@ -13,9 +13,6 @@ ___
 * not enough delay async numbers and color tile
 ___
 ### Development Plans
-* better visualization of Sudokus
-    * _Must_: Start- and solved Sudoku
-    * Animation of Backtracking
 * ~py2exec to run on other PCs
 ___
 ### Releases
@@ -24,5 +21,5 @@ ___
 * __Parser__ for .txt-Files to read multiple Sudokus (separated by some alphabetical char (title))
 * __os-package__ absolute pathes working  ($\Rightarrow$ should be working in every folder on every system)
 * __Tkinter__ GUI (simple, to choose sudoku to solve)
-* __Tkinter__ graphical solution
+* __Tkinter__ graphical solution + animation
 * Board resizeable and offsetable
