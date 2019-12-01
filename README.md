@@ -16,9 +16,7 @@ ___
 * ~py2exec to run on PC as standalone
 ___
 ### Needs Fixing
-* "spaced" sudokus to non-spaced (script), __BECAUSE__:
-    * weird offset on blinking tile 
-    * not enough delay async numbers and color tile
+
 ___
 ### Releases
 ##### v0.1 (2019-11-28)
@@ -31,3 +29,5 @@ ___
 * __Tkinter__ graphical solution
 * Board resizeable and offsetable (not  dynamically)
 
+##### v1.0 (2019-12-01)
+* rudimentary things work properly afaik

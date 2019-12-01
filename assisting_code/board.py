@@ -6,7 +6,7 @@ import tkinter as tk
 
 class Board:
     def __init__(self, sudoku):
-        self.animated = True
+        self.animated = False
         self.delay = 0.01
         self.min_ = 5
         self.size = 450
@@ -93,13 +93,6 @@ class Board:
         self.cv.delete(self.tile)
         self.readin(end)
         self.master.mainloop()
-
-    def postscript(self, path):
-        self.cv.pack()
-        self.master.mainloop()
-        self.cv.update()
-        self.cv.postscript(file=path, colormode='color')
-        self.cv.mainloop()
 
     def prtsudoku(self, sudoku):
         df = pd.DataFrame(sudoku)
