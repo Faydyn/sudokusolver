@@ -1,17 +1,25 @@
 # sudokusolver
-Python Programm to solve any Sudoku via Backtracking
 ###### by faydyn
+### Python Programm to solve Sudokus via Backtracking
+
 ___
-#### Starting the Algorithm
+#### Tkinter Visualization
 ![Sudoko Backtracking](gifs/sdbtff.gif)
 #### Finishes quick in the end :)
 ![Finishing the Sudoku](gifs/sdbtff_end.gif)
 
 _a bit low fps due to .gif-format_
 ___
-### WiP 
-##### Latest Update: 2019-11-30
-* Implement UI: fast or graphical solution - decider
+### Dev Plans
+#### Latest Update: 2019-12-01
+###### Recent
+* __Display Sudokus as picture__
+    * sudoku.txt to numpy array to picture
+    * function to map picture to corresponding txt for sudoku choice
+* add more sudokus
+* Tkinter: fast or graphical solution - decider
+###### Far Future
+* Flask Web App
 * Language Superclass / languages as subclasses
 * ~py2exec to run on PC as standalone
 ___
@@ -29,5 +37,5 @@ ___
 * __Tkinter__ graphical solution
 * Board resizeable and offsetable (not  dynamically)
 
-##### v1.0 (2019-12-01)
+#### v1.0 (2019-12-01)
 * rudimentary things work properly afaik
